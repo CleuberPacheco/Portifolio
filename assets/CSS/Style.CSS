@@ -1,0 +1,395 @@
+html {
+    overflow-y: scroll; /* Força a barra de rolagem vertical aparecer sempre */
+}
+
+body {
+    /* Exemplo com Gradiente (mais fácil de testar agora) */
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    min-height: 100vh; /* Garante que o fundo vá até o final da página */
+    color: white; /* Muda a cor do texto padrão para branco */
+    margin: 0;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align:center;
+    margin: 0 auto;
+    max-width:70vw;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom:1px solid #000;
+}
+.ola{
+    color: #adadad;
+
+
+}
+.nome{
+
+    color: #03afcedc;
+}
+
+.sobre {
+    text-align: center;
+    margin-top: 40px
+}
+
+.hardskills {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 65vw;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid #000;
+
+}
+
+.icones {
+    display: flex;
+    justify-content: center; /* Centraliza o grupo na tela */
+    gap: 30px; /* Espaço entre cada bloco de skill */
+    flex-wrap: wrap; /* Permite quebrar linha se a tela for pequena */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icones img {
+    filter: grayscale(1);
+    max-width: 100%;
+    height: 100%;
+    transition: filter 0.2s ease-in-out;
+}
+
+.icones img:hover {
+    filter: grayscale(0%);
+
+}
+
+
+/* A caixinha individual de cada skill (Imagem + Texto) */
+.skill-box {
+    display: flex;
+    flex-direction: column; /* Coloca a imagem EM CIMA do texto */
+    align-items: center;    /* Centraliza imagem e texto horizontalmente */
+}
+
+/* Ajuste das imagens para não ficarem gigantes */
+.skill-box img {
+    max-width: 100px;
+    max-height: 100px;  /* Tamanho do ícone */
+    margin-bottom: 10px; /* Espacinho entre o ícone e o texto */
+}
+
+/* Ajuste do texto */
+.skill-box p {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.navbar-nav .nav-link:hover {
+    /* Simula o negrito desenhando o texto duas vezes com um leve offset */
+    text-shadow: 0.1px 0 0 #FFFFFF; /* Adiciona uma sombra branca/clara */
+    
+    /* Opcional: Aumenta a cor do texto para o destaque (aqui usamos o azul claro) */
+    color: #ffffff !important; 
+}
+
+.imgperfil {
+    width: 20%;
+    min-width: 225px;
+    margin-top: max(20px, 2%);
+    border-radius: 50%;
+    border: max(5px, 0.5vw) solid #000000dc;
+    }
+.imgperfil:hover {
+    border: max(5px, 0.5vw) solid #026b7edc;
+}
+
+.boxperfil {
+    display: flex;
+    justify-content: center;
+}
+
+.texto {
+    text-align: justify;
+    max-width: 65vw;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.boxprojetos {
+    flex: 1 1 300px;
+    min-width: 25vw;
+    max-width: 400px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-bottom: 7px solid #026b7edc;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 1px #00000083;
+}
+.boxprojetos img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:left center ;
+    border-radius: 7px;
+    
+
+
+}
+
+.rodape {
+    text-align: center;
+    padding: 15px;
+    height: 100px;
+    background-color: #000000dc;
+    
+}
+
+.descomplica{
+    color: #000;
+    display: flex;
+    margin: 50px ;
+    margin-top: 30px;
+    max-width: ;
+    height:200px;
+    border-radius: 30px 0px 30px 0px;
+    background-color: #000000;
+}
+
+.descomplica img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:left center;
+    border-radius: 30px 0px 30px 0px;
+
+}
+.boxtextos {
+    font-size: 15px;
+    width: 65%;
+    margin:auto auto;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.careplus {
+    color: #000;
+    display: flex;
+    margin: 50px ;
+    margin-top: 30px;
+    max-width: ;
+    height: 200px;
+    border-radius: 30px 0px 30px 0px;
+    background-color: #000000;
+}
+
+.careplus img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:left center;
+    border-radius: 30px 0px 30px 0px;
+
+}
+
+.nohall{
+    color: #000;
+    display: flex;
+    margin: 50px ;
+    margin-top: 30px;
+    max-width: ;
+    height: 200px;
+    border-radius: 30px 0px 30px 0px;
+    background-color: #000000;
+}
+
+.nohall img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:left center;
+    border-radius: 30px 0px 30px 0px;
+
+}
+.cert h1 {
+    text-align: center;
+    padding: 20px;
+}
+.certificacao {
+    color: #ffffff;
+    display: flex;
+    max-width: 1800px;
+    height: 125px;
+    background-color: #000000;
+    margin: 0px auto 25px;
+    border-radius: 30px 0px;
+}
+.certificacao img {
+    border-radius: 30px 0px 30px 0px;
+}
+.boxtexto {
+    width: 1100px;
+    text-align: justify;
+    font-size: 15px;
+}
+.boxtexto h5 {
+    text-align: center;
+    margin: 7px;
+}
+.botao {
+    margin: auto;
+}
+.alinhamento {
+    margin-top: auto;
+}
+
+.contato {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    padding: 50px;
+}
+.titulo {   
+    padding: 50px;
+
+}
+
+.dados {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4e4b4b;
+    text-align: center;
+    padding: 50px;
+}
+
+
+
+
+/* Media Query que mira em telas menores que o breakpoint LG (992px) */
+@media (max-width: 991.98px) {
+    
+    /* 1. Aplica a borda em todos os itens de texto e nos ícones */
+    .navbar-nav .nav-item {
+        /* Garante que o CSS do Bootstrap seja sobrescrito com a borda */
+        border-top: 1px solid #dee2e6 !important; 
+        padding-top: 5px !important; /* Adiciona espaço acima da borda */
+        
+        /* Zera margens horizontais que possam atrapalhar a borda em mobile */
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    /* 2. Remove a borda do primeiro item (links de texto) para um visual limpo */
+    .navbar-nav .nav-item:first-child {
+        border-top: none !important;
+        padding-top: 0 !important;
+    }
+    
+    /* 3. Remove a borda do item que contém os ícones sociais se eles forem o último item */
+    .navbar-nav .nav-item:last-child {
+        border-bottom: none !important;
+    }
+
+
+}
+
+/* Garante que NUNCA haja borda em telas grandes (desktop) */
+@media (min-width: 992px) {
+    .navbar-nav .nav-item {
+        border-top: none !important;
+    }
+    }
+
+@media (max-width: 1280px){
+    .boxtextos {
+    display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .descomplica button, .descomplica a.btn,
+    .careplus button,    .careplus a.btn,
+    .nohall button,      .nohall a.btn {
+        
+        /* A mágica que faz sumir */
+        display: none !important; 
+    }
+    .boxtexto p {
+        display: none; /* Faz o texto descritivo sumir completamente */
+    }
+
+    /* Opcional: Ajuste de margem para o título não ficar colado no botão */
+    .boxtexto h5 {
+        font-size: 17px;
+    
+    }
+    /* 1. O Container Pai */
+    .certificacao {
+        display: flex;
+        align-items: center; /* Centraliza verticalmente */
+        /* Garanta que não tenha height fixa aqui que atrapalhe */
+        height: auto;
+        min-height: 125px; /* Altura mínima para garantir o design */
+        padding-right: 20px; /* Um espaço para o botão na direita não colar */
+        /* overflow: hidden; <--- SE TIVER ISSO, REMOVA. Senão corta a sombra */
+        margin: 20px;
+    }
+
+
+    /* 2. A Imagem (O que vai ficar embaixo) */
+    .certificacao img {
+        /* Definimos um tamanho fixo para a imagem servir de base */
+        width: 250px;
+        height: 125px;
+        object-fit: cover;
+        object-position: left center; /* Foca na esquerda */
+        border-radius: 30px 0 0 30px;
+
+        /* IMPORTANTE: Para garantir que ela fique ATRÁS do texto */
+        position: relative;
+        z-index: 1;
+    }
+
+    .boxtexto {
+        margin-left: -155px; /* Ajuste este valor para cobrir mais ou menos a imagem */
+        position: relative;
+        z-index: 2;
+        padding: 20px;
+    }
+    .certificacao .botao {
+            display: none; /* Faz o botão sumir e não ocupar espaço */
+    }
+
+    .texto {
+    text-align: justify;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid #000;
+}
+}
